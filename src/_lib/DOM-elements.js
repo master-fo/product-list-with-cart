@@ -152,7 +152,7 @@ import { products } from "../data";
          elements.push(`
                <div id="${product.id}" class="relative max-h-95 max-w-80 sm:max-w-70 md:max-w-45">
                  <div class="image-container rounded-lg">
-                     <img class="product-img max-h-70 w-full rounded-lg object-cover" src="./public/images/image-${product.img}-desktop.jpg" alt="">
+                     <img class="product-img max-h-70 w-full rounded-lg object-cover" src="/public/images/image-${product.img}-desktop.jpg" alt="">
                  </div>
                  <div class="text-container mt-7">
                      <h3 class="product-name text-xs text-gray-500">${product.name}</h3>
@@ -192,7 +192,7 @@ import { products } from "../data";
          total = total + (cart[key]*product.price)
          elements.push(`<div class="flex justify-between items-center">
            <div class="flex gap-2">
-               <img src="./images/image-${product.img}-desktop.jpg" alt="" class="w-10 h-10 rounded-md">
+               <img src="/images/image-${product.img}-desktop.jpg" alt="" class="w-10 h-10 rounded-md">
                <div class="">
                    <p class="text-sm font-bold text-gray-700">${product.desc}</p>
                    <div class="flex justify-start gap-5">
