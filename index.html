@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/styles.css">
     <title>Product List with Cart</title>
-    <!-- <script type="module" src="/src/main.js"></script> -->
+    <script type="module" src="/src/main.js"></script>
   </head>
   <body>
     <div class="page container py-10 mx-auto bg-gray-200 flex flex-wrap justify-around">
@@ -294,7 +294,7 @@
                 <img class="w-4" src="./images/icon-carbon-neutral.svg" alt="">
                 <span class="text-sm text-gray-500">This is a <b class="text-black">carbon-neutral</b> delivery</span>
             </div>
-            <button class="bg-red-500 text-white text-sm w-full rounded-2xl py-2">Confirm Order</button>
+            <button id="confirm-order--btn" class="bg-red-500 text-white text-sm w-full rounded-2xl py-2">Confirm Order</button>
         </div>
 
         <div class="hidden w-80 p-5 rounded-lg bg-white flex flex-col items-center gap-7">
@@ -304,6 +304,64 @@
         </div>
 
       </div>
-    </div>
-  </body>
+
+
+
+      <div id="order-confirmed--page" class="hidden w-screen h-screen bg-black/55 absolute inset-0 flex justify-center items-end sm:items-center">
+        <div class="w-full sm:max-w-130 p-5 rounded-lg bg-white flex flex-col gap-7">
+            <img class="w-7 h-7" src="./images/icon-order-confirmed.svg" alt="">
+            <div class="">
+                <h2 class="cart-title text-2xl text-black font-bold">Order Confirmed</h2>
+                <span class="text-gray-500 text-sm">We hope you enjoy your food!</span>
+              </div>
+              <div class="flex flex-col gap-7">
+                  <div class="flex justify-between items-center">
+                      <div class="flex gap-2">
+                          <img src="./images/image-tiramisu-desktop.jpg" alt="" class="w-10 h-10 rounded-md">
+                          <div class="">
+                            <p class="text-sm font-bold text-gray-700">Classic Tiramisu</p>
+                            <div class="flex justify-start gap-5">
+                                <span class="text-sm text-red-500">1x</span>
+                                <span class="text-sm text-gray-500">@ $5.50</span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="text-sm text-gray-500">$5.50</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <div class="flex gap-2">
+                        <img src="./images/image-creme-brulee-desktop.jpg" alt="" class="w-10 h-10 rounded-md">
+                        <div class="">
+                            <p class="text-sm font-bold text-gray-700">Vanilla Bean Creme Brulee</p>
+                            <div class="flex justify-start gap-5">
+                                <span class="text-sm text-red-500">4x</span>
+                                <span class="text-sm text-gray-500">@ $7.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="text-sm text-gray-500">$28.00</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <div class="flex gap-2">
+                        <img src="./images/image-panna-cotta-desktop.jpg" alt="" class="w-10 h-10 rounded-md">
+                        <div class="">
+                            <p class="text-sm font-bold text-gray-700">Vanilla Panna Cotta</p>
+                            <div class="flex justify-start gap-5">
+                                <span class="text-sm text-red-500">2x</span>
+                                <span class="text-sm text-gray-500">@ $6.50</span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="text-sm text-gray-500">$13.00</span>
+                </div>
+            </div>
+            <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-500">Order Total</span>
+                <p class="text-black font-bold text-xl">$46.50</p>
+            </div>
+            <button id="new-order--btn" class="bg-red-500 text-white text-sm w-full rounded-2xl py-2">Start New Order</button>
+        </div>
+      </div>
+
+    </body>
 </html>
