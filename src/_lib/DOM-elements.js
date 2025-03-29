@@ -88,7 +88,7 @@ import { products } from "../data";
                    </div>
                </div>
                <a href="#" class="w-5 h-5 border-2 border-gray-300 rounded-full flex justify-center items-center">
-                   <img src="./images/icon-remove-item.svg" class="w-2 h-2 text-gray-500" alt="">
+                   <img src="/images/icon-remove-item.svg" class="w-2 h-2 text-gray-500" alt="">
                </a>
                `
      cartWrapper.appendChild(cartItem)
@@ -152,7 +152,7 @@ import { products } from "../data";
          elements.push(`
                <div id="${product.id}" class="relative max-h-95 max-w-80 sm:max-w-70 md:max-w-45">
                  <div class="image-container rounded-lg">
-                     <img class="product-img max-h-70 w-full rounded-lg object-cover" src="/public/images/image-${product.img}-desktop.jpg" alt="">
+                     <img class="product-img max-h-70 w-full rounded-lg object-cover" src="/images/image-${product.img}-desktop.jpg" alt="">
                  </div>
                  <div class="text-container mt-7">
                      <h3 class="product-name text-xs text-gray-500">${product.name}</h3>
@@ -161,16 +161,16 @@ import { products } from "../data";
                  </div>
                  <div href="#" class="absolute h-10 inset-x-0 bottom-17 rounded-3xl">
                      <a href="#" class="bg-white add-to--cart-btn border-2 border-red-200 h-full flex justify-center gap-3 items-center rounded-3xl">
-                         <img class="w-4 h-4" src="./images/icon-add-to-cart.svg" alt="">
+                         <img class="w-4 h-4" src="/images/icon-add-to-cart.svg" alt="">
                          <span class="text-black text-sm">Add to Cart</span>
                      </a>
                      <div class=" hidden bg-red-600 h-full flex justify-around items-center rounded-3xl">
                          <a href="" class="add-to--cart-btn decr w-5 h-5 border-2 border-white rounded-full flex justify-center items-center">
-                             <img class="text-white w-2" src="./images/icon-decrement-quantity.svg" alt="">
+                             <img class="text-white w-2" src="/images/icon-decrement-quantity.svg" alt="">
                          </a>
                          <span class="text-white text-sm">0</span>
                          <a href="" class="add-to--cart-btn incr w-5 h-5 border-2 border-white rounded-full flex justify-center items-center">
-                             <img class="text-white w-2" src="./images/icon-increment-quantity.svg" alt="">
+                             <img class="text-white w-2" src="/images/icon-increment-quantity.svg" alt="">
                          </a>
                      </div>
                  </div>
