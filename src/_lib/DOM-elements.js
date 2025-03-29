@@ -80,7 +80,7 @@ import { products } from "../data";
      cartItem.className = 'flex justify-between items-center'
      cartItem.innerHTML = `
                  <div class="cart-product--details">
-                   <p class="text-sm font-bold text-gray-700">${product.desc}kjl</p>
+                   <p class="text-sm font-bold text-gray-700">${product.desc}</p>
                    <div class="flex justify-start gap-5">
                        <span class="text-sm text-red-500">1x</span>
                        <span class="text-sm text-gray-500">@ ${product.price.toFixed(2)}</span>
