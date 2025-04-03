@@ -150,7 +150,7 @@ import { products } from "../data";
      let elements = []
      products.forEach(product => {
          elements.push(`
-               <div id="${product.id}" class="relative max-h-95 max-w-80 sm:max-w-70 md:max-w-45">
+               <div id="${product.id}" class="mb-5 sm:mb-0 relative max-h-95 max-w-80 sm:max-w-70 md:max-w-45">
                  <div class="image-container rounded-lg">
                      <img class="product-img max-h-70 w-full rounded-lg object-cover" src="/images/image-${product.img}-desktop.jpg" alt="">
                  </div>
